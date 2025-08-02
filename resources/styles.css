@@ -1,0 +1,68 @@
+
+/*Contenedor Static Principal
+MainAppUI {
+        align: center middle;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    } 
+    */
+
+/* Contenedor Principal */
+/*
+   ├── Valid values for <bordertype> are:                                   
+   │   'ascii', 'blank', 'dashed', 'double', 'heavy', 'hidden', 'hkey',     
+   │   'inner', 'none', 'outer', 'panel', 'round', 'solid', 'tab', 'tall',  
+   │   'thick', 'vkey', or 'wide'  
+*/
+#MainContainer{
+    align: center top;
+    width: auto;
+    height: auto;
+    border: panel $primary;
+    overflow: auto;
+    padding: 1 2 1 2;
+}
+
+
+/*Contenedores Secundarios*/
+.selectInstanceHorizontal{
+    align: left top;
+    border: ascii $text-primary;
+    max-height: 3;
+    min-height: 3;
+
+}
+.labelsDetailsVertical{
+    align: left top;
+    border: ascii $primary;
+    min-height: 6;
+    max-height: 6;
+}
+.butonsPeerHorizontal{
+    padding: 1 0 1 0;
+    min-height: 3;
+    max-height: 3;
+}
+.dataTableContainer{
+    height: 100fr;
+    border: ascii $primary;
+    overflow: auto;
+}
+#peerDataTable{
+    width: 100%;
+    height: 1fr;
+}
+
+
+#instance_select, #instance_filter .label{
+    width: 2fr;
+    padding:  0 2 0 2;
+
+}
+#instance_switch{
+    width: 4;
+    border: hidden;
+    padding: 0 0 0 0;
+
+}
